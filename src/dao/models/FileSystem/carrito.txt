@@ -1,0 +1,1 @@
+[{"cid":1,"productos":[{"codprod":"ABC214","quantify":3}]},{"cid":2,"productos":[{"codprod":"ABC214","quantify":1}]},{"cid":3,"productos":[]}]

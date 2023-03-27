@@ -1,0 +1,52 @@
+<div>       
+       <div>
+          
+          <h3>RealTimeProducts</h3>          
+          
+          <p><input id="idtitle" type="text" placeholder="Ingrese title"></p>    
+          <p><input id="iddescription" type="text" placeholder="Ingrese description"></p>    
+          <p><input id="idcode" type="text" placeholder="Ingrese code"></p>
+          <p><input id="idprice" type="text" placeholder="Ingrese price"></p>
+          <p><input id="idstatus" type="text" placeholder="Ingrese status"></p>
+          <p><input id="idstock" type="text" placeholder="Ingrese stock"></p>
+          <p><input id="idcategory" type="text" placeholder="Ingrese category"></p>        
+          <p><input id="idthumbnail" type="text" placeholder="Ingrese thumbnail"></p>        
+          <p><button onclick="Agregar();">Agregar</button></p>        
+          <p><button onclick="Eliminar();">Eliminar</button></p>        
+          <p><button onclick="Cancelar();">Cancelar</button></p>                    
+          
+        </div>          
+
+         <div id="muestrotitle"></div>
+         <div id="muestrodescription"></div>
+         <div id="todo"></div> 
+
+</div>
+
+<div>
+    <h3>Productos:</h3>
+    <p>
+        {{#each productlist2}}
+            <div>
+                <p> title: {{this.title}} </p>
+                <p> description: {{this.description}} </p>
+                <p> code: {{this.code}} </p>
+                <p> price: {{this.price}} </p>
+                <p> status: {{this.status}} </p>
+                <p> stock: {{this.stock}} </p>
+                <p> category: {{this.category}} </p>
+                <p> thumbnail: {{this.thumbnail}} </p>            
+                <p> id: {{this.id}} </p>
+            </div>
+        {{/each}}
+    </p>
+</div>
+
+
+<div id="mostrame"></div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.js" integrity="sha512-rwu37NnL8piEGiFhe2c5j4GahN+gFsIn9k/0hkRY44iz0pc81tBNaUN56qF8X4fy+5pgAAgYi2C9FXdetne5sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="js/main.js"></script>
+
